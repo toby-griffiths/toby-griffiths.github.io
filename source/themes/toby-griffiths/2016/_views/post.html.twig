@@ -23,10 +23,11 @@
             </p>
         {% endif %}
         {% if page.tags %}
-            <p class="tags">Tags:
+            <p class="tags">
+                <span>Tags</span>: {# keep a single space after span #}
                 {%- for tag in page.tags -%}
-                    <a
-                    href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                    <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
+                    {%- if not loop.last %}, {% endif %}
                 {%- endfor -%}
             </p>
         {% endif %}
