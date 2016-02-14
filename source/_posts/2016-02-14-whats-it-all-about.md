@@ -1,5 +1,4 @@
 ---
-layout: default
 title: What's it all about
 draft: true
 banner:
