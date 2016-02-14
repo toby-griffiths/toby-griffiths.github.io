@@ -1,9 +1,6 @@
 ---
 title: What's it all about
 draft: true
-banner:
-  uri:    images/open-door-under-construction.jpg
-  source: http://bit.ly/1ocWQZM 
 tags:
 - about me
 
