@@ -15,6 +15,9 @@ sculpin generate --env=prod
 
 git checkout --orphan master
 
+# Remove everything but the published files
+find . -maxdepth 1 -type f ! -iname "output_prod" --delete
+
 cp -R output_prod/* .
 rm -rf output_*
 
