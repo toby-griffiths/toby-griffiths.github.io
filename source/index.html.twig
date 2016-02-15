@@ -3,26 +3,26 @@ layout: default
 title: Home
 generator: pagination
 pagination:
-    max_per_page: 3
+max_per_page: 3
 use:
-    - posts
+- posts
 ---
+{% import 'taxonomy.twig' as tax %}
 {% for post in page.pagination.items %}
     <article>
         <header>
             <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
         </header>
         <div>
-            {{ post.blocks.content|raw }}
+            {% if post.abstract is not empty %}
+                <p>{{ post.abstract }}</p>
+                <div><a href="{{ site.url }}{{ post.url }}">read more</a></div>
+            {% else %}
+                {{ post.blocks.content|raw }}
+            {% endif %}
         </div>
-        {% if post.meta.tags %}
-            <p class="tags">
-            Tags:
-            {% for tag in post.meta.tags %}
-            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
-            </p>
-        {% endif %}
+        {{ tax.categories_list(post.meta.categories|default([])) }}
+        {{ tax.tags_list(post.meta.tags|default([])) }}
     </article>
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
