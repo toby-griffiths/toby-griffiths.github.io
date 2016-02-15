@@ -14,6 +14,11 @@ git checkout publish
 sculpin generate --env=prod
 
 git checkout --orphan master
+git reset
+
+echo "Do the rest manually"
+
+exit 0;
 
 # Remove everything but the published files
 mv output_prod /tmp/output_prod
