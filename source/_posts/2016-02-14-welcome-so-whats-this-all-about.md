@@ -1,7 +1,9 @@
 ---
 title: Welcome - So what's this all about?
-tags:
+categories:
 - about me
+tags:
+- welcome
 
 author: Toby Griffiths
 ---
