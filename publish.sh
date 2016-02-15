@@ -13,7 +13,7 @@ git checkout publish
 
 sculpin generate --env=prod
 
-git checkout master
+git checkout --orphan master
 
 cp -R output_prod/* .
 rm -rf output_*
