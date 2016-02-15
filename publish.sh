@@ -16,10 +16,11 @@ sculpin generate --env=prod
 git checkout --orphan master
 
 # Remove everything but the published files
-find . -maxdepth 1 -type f ! -iname "output_prod" --delete
+mv output_prod /tmp/output_prod
+rm -rf *
 
-cp -R output_prod/* .
-rm -rf output_*
+mv -R /tmp/output_prod/* .
+rm -rf /tmp/output_prod
 
 echo "blog.tobyg.net" > CNAME
 
