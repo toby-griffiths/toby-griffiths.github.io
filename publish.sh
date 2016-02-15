@@ -25,7 +25,7 @@ echo "blog.tobyg.net" > CNAME
 
 git add *
 git commit -m "$1"
-git push origin --all
+git push -u origin master
 
 git checkout publish
 git stash pop
