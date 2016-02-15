@@ -18,6 +18,8 @@ git checkout master
 cp -R output_prod/* .
 rm -rf output_*
 
+echo "blog.tobyg.net" > CNAME
+
 git add *
 git commit -m "$1"
 git push origin --all
