@@ -1,8 +1,9 @@
 ---
-title: What's it all about
-draft: true
-tags:
+title: Welcome - So what's this all about?
+categories:
 - about me
+tags:
+- welcome
 
 author: Toby Griffiths
 ---
@@ -21,5 +22,3 @@ of each post I write in this blog is a far better way of finding out about who I
 am, and who I hope to become.
 
 I hope you enjoy the read.
-
-T
