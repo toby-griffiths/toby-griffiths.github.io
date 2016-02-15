@@ -5,3 +5,6 @@ sculpin_content_types:
 sculpin_theme:
   theme:
     toby-griffiths/2016
+
+sculpin_twig:
+  extensions:  ['', 'html.twig', 'xml.twig', 'twig', 'html']
