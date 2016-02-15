@@ -1,0 +1,23 @@
+{% macro categories_list(categories) %}
+    {% if categories is not empty %}
+        <p class="categories">
+            Categories:
+            {% for category in categories %}
+                <a
+                href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category|capitalize }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+    {% endif %}
+{% endmacro %}
+
+{% macro tags_list(tags) %}
+    {% if tags is not empty %}
+        <p class="tags">
+            Tags:
+            {% for tag in tags %}
+                <a
+                href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag|capitalize }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+    {% endif %}
+{% endmacro %}
