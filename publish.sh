@@ -8,9 +8,11 @@ if [ $# -ne 1 ]; then
     exit 1;
 fi
 
+git stash
+git checkout publish
+
 sculpin generate --env=prod
 
-git stash
 git checkout master
 
 cp -R output_prod/* .
@@ -20,5 +22,5 @@ git add *
 git commit -m "$1"
 git push origin --all
 
-git checkout drafts
+git checkout publish
 git stash pop
