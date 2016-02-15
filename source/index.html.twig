@@ -14,7 +14,12 @@ use:
             <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
         </header>
         <div>
-            {{ post.blocks.content|raw }}
+            {% if post.abstract is not empty %}
+                <p>{{ post.abstract }}</p>
+                <div><a href="{{ site.url }}{{ post.url }}">read more</a></div>
+            {% else %}
+                {{ post.blocks.content|raw }}
+            {% endif %}
         </div>
         {{ tax.categories_list(post.meta.categories|default([])) }}
         {{ tax.tags_list(post.meta.tags|default([])) }}
