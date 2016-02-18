@@ -3,7 +3,8 @@
     <title><![CDATA[TobyG.net]]></title>
     <link href="/atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2016-02-18T14:53:32+00:00</updated>
+    <link href="/LICENSE.md" rel="license"/>
+    <updated>2016-02-18T15:06:21+00:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
