@@ -6,7 +6,7 @@
 git stash
 git checkout publish
 
-sculpin generate --env=prod
+sculpin generate --env=prod --url=http://blog.tobyg.net
 
 git checkout master
 
