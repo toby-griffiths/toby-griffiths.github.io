@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title><![CDATA[TobyG.net]]></title>
-    <link href="/blog/tags/dentists.xml" rel="self"/>
-    <link href="/"/>
-    <updated>2016-02-18T15:06:21+00:00</updated>
-    <id>/</id>
+    <link href="http://blog.tobyg.net/blog/tags/dentists.xml" rel="self"/>
+    <link href="http://blog.tobyg.net/"/>
+    <updated>2016-02-18T15:12:20+00:00</updated>
+    <id>http://blog.tobyg.net/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
             <title type="html"><![CDATA[Dentists - Why do I struggle to trust their advice?]]></title>
-            <link href="/blog/2016/02/18/dentists---why-do-i-struggle-to-trust-their-advice"/>
+            <link href="http://blog.tobyg.net/blog/2016/02/18/dentists---why-do-i-struggle-to-trust-their-advice"/>
             <updated>2016-02-18T00:00:00+00:00</updated>
-            <id>/blog/2016/02/18/dentists---why-do-i-struggle-to-trust-their-advice</id>
+            <id>http://blog.tobyg.net/blog/2016/02/18/dentists---why-do-i-struggle-to-trust-their-advice</id>
             <content type="html"><![CDATA[<p>I sometimes consider myself an advertisers worst target.  Unless they catch me in just the right mood, at just the right 
 time with something that I already kind of like or want, then their efforts are actually more likely to put me off 
 buying their products.</p>
