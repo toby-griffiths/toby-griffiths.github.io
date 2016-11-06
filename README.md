@@ -44,6 +44,4 @@ Publishing
 When you're ready to publish the blog, run the `./prepare.sh` script.  This will prepare the production site files and 
 stage then in git, ready for committing.
 
-Once prepared, you should check the git status to ensure no unexpected files are going to be published. If all is ready, 
-simply got commit the files to the `master` branch, and push to the GitHub repo, whereupon the live site will be 
-updated.
+Once prepared, you should check the git status to ensure no unexpected files are going to be published. If all is ready, simply git commit the files to the `master` branch, and push to the GitHub repo, whereupon the live site will be updated. Alternatively, use the `./publish.sh` script which should all do this for you.
