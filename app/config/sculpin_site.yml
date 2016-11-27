@@ -7,6 +7,10 @@ subtitle: Ramblings of an environmentally friendly, web geek, and his amazing fr
 social:
   twitter: ToG
 
+# Insert your disqus shortname
+disqus:
+  shortname:  tobyg-net
+
 links:
   - href: https://twitter.com
     text: @ToG
