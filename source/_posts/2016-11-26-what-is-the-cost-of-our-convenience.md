@@ -33,10 +33,9 @@ minimum… but what will it take to make us, a society as a whole, change our vi
 species on this planet? The ever increasing number of natural disasters? The knowledge that, if we don't do anything 
 now, our existence as a species is in danger? Who knows? Do we care enough?
 
-Do you have any thoughts on this?  Why not [tweet me](https://twitter.com/ToG)
+Do you have any thoughts on this?  Let me know in the comments below… or [tweet me](https://twitter.com/ToG)
 
 If you do want to make a difference, hopefully the following links will help…
-{add links}
 
 * [Carbon calculator](http://footprint.wwf.org.uk/)
 * [Car sharing](https://liftshare.com/uk)
