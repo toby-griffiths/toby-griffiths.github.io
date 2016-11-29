@@ -1,16 +1,16 @@
 ---
-title: Dentists - Why do I struggle to trust their advice?
-author: Toby Griffiths
+title:      Dentists - Why do I struggle to trust their advice?
+author:     Toby Griffiths
 categories:
 - random thoughts
 tags:
 - trust
 - corporate sponsorship
 - dentists
-abstract: >
+abstract:   >
   After a visit to the dentist the other day I found myself questioning whether the professional advice I was receiving
   was entirely unbiased, or influenced by corporate influence or sponsorship.  How can we tell these days?
-
+image:      ~
 ---
 I sometimes consider myself an advertisers worst target.  Unless they catch me in just the right mood, at just the right 
 time with something that I already kind of like or want, then their efforts are actually more likely to put me off 
