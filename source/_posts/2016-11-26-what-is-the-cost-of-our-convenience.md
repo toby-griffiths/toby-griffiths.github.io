@@ -1,16 +1,21 @@
 ---
-title: What is the cost of our convenience?
-author: Toby Griffiths
+title:      What is the cost of our convenience?
+author:     Toby Griffiths
 categories:
 - the environment
 - random thoughts
 tags:
 - global warming
 - polar ice caps
-abstract: >
+abstract:   >
   We, as a society, are looking for everything to be quicker, easier & more convenient these day, but how many of us 
   stop and question the cost of that convenience? And do we care?
-
+image:
+    file:           2016/11/2016-11-26-what-is-the-cost-of-our-convenience.jpg
+    description:    Homeless polar bears
+    credit:
+        name:   David Blackwell
+        url:    https://www.flickr.com/photos/mobilestreetlife/6152912401/in/photolist-anHhuz-4zVPUF-oUxKCc-haEqfm-6iJ529-4c6Tpq-4ZoJaA-haEa7e-m3i3Ra-haEoHG-ckE7N1-fyfrjx-dpwz2X-6atNYf-haEesZ-haEijC-haEogS-haFy4x-haErah-MiqKg-haFA8n-haEbCR-haEgXh-vPcWB-kZ4JX6-haEhju-haEqMy-haEkGS-haFAEp-haEeZv-haFyap-EWyyM-haEkwU-sfUoL1-ckDugd-haEgwP-haFAep-haEhMo-pD1TYR-haFAhF-haFBLx-pNMt8u-haEnRU-haEdyp-haEkHf-haEjwC-jzDF5o-9svF6S-5NVgTY-6YEqti
 ---
 Last night, we put up our Christmas tree the earliest I think we've ever done it, to cheer ourselves up after missing 
 our flight to France for the weekend. While we did we put on National Geographic's "[Arctic Tale](https://www.netflix.com/title/70073731)", to add a little 
