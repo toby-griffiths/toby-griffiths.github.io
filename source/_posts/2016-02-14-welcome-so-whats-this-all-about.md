@@ -10,7 +10,11 @@ abstract:   >
   never really been one for writing, but over the last few years I've come to realise that the thoughts and knowledge in 
   my head might actually be of use to a few other people.  I've also started to realise that I can have a positive 
   effect on the world, if I want to, by sharing my thoughts an ideas with anyone who'd like to listen.
-image:      ~
+image:
+    file:           2016/02/open-door-under-construction.jpg
+    description:    Under construction
+    credit:
+        url:    ~   # Purchased image
 ---
 So I've finally got round to doing what I said I was going to do, and get this blog back up and running again.  I've 
 never really been one for writing, but over the last few years I've come to realise that the thoughts and knowledge in 
