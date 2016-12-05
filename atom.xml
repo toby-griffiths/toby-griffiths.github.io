@@ -4,9 +4,44 @@
     <link href="http://blog.tobyg.net/atom.xml" rel="self"/>
     <link href="http://blog.tobyg.net/"/>
     <link href="http://blog.tobyg.net/LICENSE.md" rel="license"    />
-    <updated>2016-11-29T11:37:40+00:00</updated>
+    <updated>2016-12-05T10:55:27+00:00</updated>
     <id>http://blog.tobyg.net/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
+            <entry>
+            <title type="html"><![CDATA[Doctrine proxy object not not returning associated entities]]></title>
+            <link href="http://blog.tobyg.net/blog/2016/12/05/doctrine-proxy-object-not-not-returning-associated-entities"/>
+            <updated>2016-12-05T00:00:00+00:00</updated>
+            <id>http://blog.tobyg.net/blog/2016/12/05/doctrine-proxy-object-not-not-returning-associated-entities</id>
+            <content type="html"><![CDATA[<h3 id="the-problem">The problem</h3>
+
+<p>I was recently working on a project that had code to loop over collection of related Doctrine entities, and total up the 
+values on each. The problem was that the object who's collection property I was trying to get the related entities for 
+was a Proxy object, and the getter for this property was returning <code>null</code> rather than a persistent collection object.<br />
+I spent a good few hours trying to debug this, stepping through the process to see why it wasn't returning a value.</p>
+
+<h3 id="the-diagnosis">The diagnosis</h3>
+
+<p>Eventually I stepped through pretty much the whole process of reading the original entity &amp; through to the accessing of 
+the collection, and worked out that, when it was attempting to access the property, it was attempting to load the proxy 
+collection data, but the proxy object had a different object ID to the one that the entity manager knew about, so it was 
+creating a brand new one, without the associated data.</p>
+
+<p>So why was this happening?  It turns out that, due to the fact that I was attempting to save a record with <code>null</code> values 
+to a database table field that wasn't nullable.  This was causing an exception to be thrown, &amp; logged, however in my 
+code I was catching this exception and displaying an error message about the record not being saved.  The real cause of 
+the problem was that when Doctrine fails to save an entity, it clears the Unit of Work, and so removes all the known 
+records, meaning that when you attempt to access the properties on the proxy object, the Unit of Work does not know 
+about it, and so creates a new one, but in so doing, bypasses the loading of the data for it.</p>
+
+<h3 id="the-fix">The fix</h3>
+
+<p>The way to fix this it to ensure that you re-load your entities after Doctrine throws an exception like this.</p>
+
+<p>I hope that this helps anyone coming across this with similar problems.  If so, please let me know in the comments.</p>
+
+<p>Have an awesome day! :o)</p>
+]]></content>
+        </entry>
             <entry>
             <title type="html"><![CDATA[What is the cost of our convenience?]]></title>
             <link href="http://blog.tobyg.net/blog/2016/11/26/what-is-the-cost-of-our-convenience"/>
